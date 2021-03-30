@@ -1,0 +1,15 @@
+{
+  "name": "skillfactory-bdd-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Pavel Tretyakov <az@paveltretyakov.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}
