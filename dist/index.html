@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mocha + Chai BDD testing</title>
+
+  <!-- Подключаем стили -->
+  <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+</head>
+<body>
+
+  <!-- Добаляем текстовое поле с информационным полем для тестирования -->
+  <textarea id="information-field" cols="58" rows="13" style="margin: 50px">
+dark dark dark dark dark dark dark dark dark dark dark
+dark dark dark dark dark dark dark dark dark dark dark
+dark dark dark dark dark dark dark dark dark dark dark
+dark dark dark dark dark dark dark dark dark dark dark
+dark dark dark dark dark dark dark dark dark dark dark
+dark dark dark dark dark true dark dark dark dark dark
+dark dark dark dark dark dark dark dark dark dark dark
+dark dark dark dark dark dark dark dark dark dark dark
+dark dark dark dark dark dark dark dark dark dark dark
+dark dark dark dark dark dark dark dark dark dark dark
+dark dark dark dark dark dark dark dark dark dark dark
+  </textarea>
+
+  <div id="mocha"></div>
+
+  <!-- Подключаем скрипты библиотек Chai и Mocha -->
+  <script src="https://unpkg.com/mocha/mocha.js"></script>
+  <script src="https://unpkg.com/chai/chai.js"></script>
+
+  <!--  -->
+  <script>
+    var expect = chai.expect;
+  </script>
+
+  <!-- Указываем в установках интерфейс BDD -->
+  <script>mocha.setup('bdd');</script>
+
+  <!-- Подлючаем скрип со спкеой -->
+  <script src="test.js"></script>
+
+  <!-- Запустить скрипт -->
+  <script>mocha.run()</script>
+</body>
+</html>
