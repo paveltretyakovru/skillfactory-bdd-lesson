@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test:frontend": "serve"
   },
   "author": "Pavel Tretyakov <az@paveltretyakov.ru>",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^8.3.2",
-    "serv": "^0.2.4"
+    "serve-bin": "^0.0.1"
   }
 }
